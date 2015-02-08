@@ -6,14 +6,15 @@
 <header>
 	<div class="container">
 		<div class="intro-text">
-			<div class="intro-lead-in">Welcome To Our Studio!</div>
-			<div class="intro-heading">It's Nice To Meet You</div>
+			<div class="intro-lead-in">Your ideas are light.</div>
+			<div class="intro-heading">Design is the prism that brings them to life.</div>
 			<a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
 		</div>
 	</div>
 </header>
 
 <!-- Services Section -->
+<a name="services"></a>
 <section id="services">
 	<div class="container">
 		<div class="row">
@@ -24,27 +25,18 @@
 		</div>
 		<div class="row text-center">
 			<div class="col-md-4">
-				<span class="fa-stack fa-4x">
-					<i class="fa fa-circle fa-stack-2x text-primary"></i>
-					<i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-				</span>
-				<h4 class="service-heading">E-Commerce</h4>
+				<img src="{{ img }}/branding-icon.png" width="125px">
+				<h4 class="service-heading">Branding</h4>
 				<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
 			</div>
 			<div class="col-md-4">
-				<span class="fa-stack fa-4x">
-					<i class="fa fa-circle fa-stack-2x text-primary"></i>
-					<i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-				</span>
-				<h4 class="service-heading">Responsive Design</h4>
+				<img src="{{ img }}/design-icon.png" width="125px">
+				<h4 class="service-heading">Design</h4>
 				<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
 			</div>
 			<div class="col-md-4">
-				<span class="fa-stack fa-4x">
-					<i class="fa fa-circle fa-stack-2x text-primary"></i>
-					<i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-				</span>
-				<h4 class="service-heading">Web Security</h4>
+				<img src="{{ img }}/illustration-icon.png" width="125px">
+				<h4 class="service-heading">Illustration</h4>
 				<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
 			</div>
 		</div>
@@ -90,6 +82,7 @@
 				<h3 class="section-subheading text-muted">{{ posts.blog.description }}</h3>
 			</div>
 		</div>
+		<!--
 		<div class="row">
 			<div class="col-lg-12">
 				<ul class="timeline">
@@ -159,6 +152,7 @@
 				</ul>
 			</div>
 		</div>
+		-->
 	</div>
 </section>
 
@@ -258,41 +252,10 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 text-center">
-				<h2 class="section-heading">Contact Us</h2>
+				<h2 class="section-heading">Hit me up</h2>
 				<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-12">
-				<form name="sentMessage" id="contactForm" novalidate>
-					<div class="row">
-						<div class="col-md-6">
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
-								<p class="help-block text-danger"></p>
-							</div>
-							<div class="form-group">
-								<input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
-								<p class="help-block text-danger"></p>
-							</div>
-							<div class="form-group">
-								<input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
-								<p class="help-block text-danger"></p>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-								<textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
-								<p class="help-block text-danger"></p>
-							</div>
-						</div>
-						<div class="clearfix"></div>
-						<div class="col-lg-12 text-center">
-							<div id="success"></div>
-							<button type="submit" class="btn btn-xl">Send Message</button>
-						</div>
-					</div>
-				</form>
+				<p class="footer-contact">###-###-####</p>
+				<p class="footer-contact">email@example.com</p>
 			</div>
 		</div>
 	</div>
@@ -316,10 +279,10 @@
 			</div>
 			<div class="col-md-4">
 				<ul class="list-inline quicklinks">
-					<li><a href="#">Privacy Policy</a>
-					</li>
-					<li><a href="#">Terms of Use</a>
-					</li>
+					<li><a class="page-scroll" href="#page-top">top</a></li>
+					<li><a class="page-scroll" href="#services">services</a></li>
+					<li><a class="page-scroll" href="#portfolio">work</a></li>
+					<li><a class="page-scroll" href="#about">about</a></li>
 				</ul>
 			</div>
 		</div>

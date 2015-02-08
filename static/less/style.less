@@ -1,1 +1,59 @@
-@import ../vender/startbootstrap-agency-1.0.2/less/agency.less
+@import "../vendor/startbootstrap-agency-1.0.2/less/agency.less";
+@images: "../img";
+
+@teal: #0BBDB3;
+body {
+	color: @teal;
+}
+
+header { 
+	background-image: url("@{images}/prism_background_photo.png");
+} 
+
+.navbar-default .navbar-toggle {
+	background-color: @teal;
+	border-color: @teal;
+}
+
+.navbar-default .navbar-brand {
+	color: @teal;
+}
+
+::selection {
+	background: @teal;
+}
+
+.navbar-default .navbar-nav > .active > a {
+	background-color: @teal;
+}
+
+.navbar-default .nav li a:hover, .navbar-default .nav li a:focus {
+	color: @teal
+}
+
+a {
+	color: @teal;
+}
+
+.btn-primary {
+	background-color: @teal;
+	border-color: @teal;
+}
+
+.btn-xl {
+	background-color: @teal;
+	border-color: @teal;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+	background: rgba(11, 189, 179, 0.9)
+}
+
+section#contact {
+	background-image: url("@{images}/prism_contact_pattern_blue.png");
+}
+
+.footer-contact {
+	color: white;
+	font-size: 24px;
+}
