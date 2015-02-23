@@ -1,31 +1,13 @@
 from flask import Flask, render_template, jsonify, redirect, flash, request
 import pytumblr
-from forms import ContactForm
 
 
 app = Flask(__name__)
-#app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?RT'
-#mail = Mail(app)
 
 
 @app.route("/", methods=['GET', 'POST'])
 def index():
-    recipients = ['guy.jacks@gmail.com']
     posts = tumblr_get_posts()
-    """
-    form = ContactForm()
-    if form.validate_on_submit():
-        flash("Thank you.  I'll get back to you soon")
-        subject = form.subject.data
-        message = form.message.data + '\n\n' + 'from: ' + form.name.data + '\n\n' + 'phone: ' + form.phone.data
-        sender = (form.name.data, form.email)
-        msg = Message(subject=subject,
-                      recipients=recipients,
-                      body=message,
-                      sender=sender)
-        mail.send(msg)
-        """
-    #return render_template('index.html', posts=posts, form=form)
     return render_template('index.html', posts=posts)
 
 
