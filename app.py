@@ -1,5 +1,4 @@
 from flask import Flask, render_template, jsonify, redirect, flash, request
-from flask.ext.mail import Mail, Message
 import pytumblr
 from forms import ContactForm
 
