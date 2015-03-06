@@ -737,6 +737,9 @@ body {
 header {
   background-image: url("../img/prism_background_photo.png");
 }
+.navbar-default .navbar-brand {
+  font-family: inherit;
+}
 .navbar-default .navbar-toggle {
   background-color: #0bbdb3;
   border-color: #0bbdb3;
@@ -754,6 +757,13 @@ header {
 .navbar-default .nav li a:focus {
   color: #0bbdb3;
 }
+div.intro-text img {
+  margin-bottom: 75px;
+}
+div.intro-text .intro-heading {
+  font-size: 42px;
+  line-height: 50px;
+}
 a {
   color: #0bbdb3;
 }
@@ -768,8 +778,18 @@ a {
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   background: rgba(11, 189, 179, 0.9);
 }
-section#contact {
+div.work {
+  width: 100%;
+}
+div.work-piece {
+  width: 25%;
+}
+section #contact {
   background-image: url("../img/prism_contact_pattern_blue.png");
+}
+section h3.section-subheading {
+  font-style: normal;
+  font-size: 20px;
 }
 .footer-contact {
   color: white;

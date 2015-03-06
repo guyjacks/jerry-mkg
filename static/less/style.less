@@ -10,6 +10,10 @@ header {
 	background-image: url("@{images}/prism_background_photo.png");
 } 
 
+.navbar-default .navbar-brand {
+	font-family: inherit;	
+}
+
 .navbar-default .navbar-toggle {
 	background-color: @teal;
 	border-color: @teal;
@@ -31,6 +35,17 @@ header {
 	color: @teal
 }
 
+div.intro-text {
+	img {
+		margin-bottom: 75px;
+	}
+
+	.intro-heading {
+		font-size: 42px;
+		line-height: 50px;
+	}
+}
+
 a {
 	color: @teal;
 }
@@ -49,8 +64,23 @@ a {
 	background: rgba(11, 189, 179, 0.9)
 }
 
-section#contact {
-	background-image: url("@{images}/prism_contact_pattern_blue.png");
+div.work {
+	width: 100%;
+}
+
+div.work-item {
+	width: 25%;
+}
+
+section {
+	#contact {
+		background-image: url("@{images}/prism_contact_pattern_blue.png");
+	}
+
+	h3.section-subheading {
+		font-style: normal;
+		font-size: 20px;
+	}
 }
 
 .footer-contact {
