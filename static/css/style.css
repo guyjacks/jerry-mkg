@@ -781,11 +781,12 @@ a {
 div.work {
   width: 100%;
 }
-div.work-piece {
+div.work-item {
   width: 25%;
 }
-section #contact {
+section#contact {
   background-image: url("../img/prism_contact_pattern_blue.png");
+  background-repeat: repeat-x;
 }
 section h3.section-subheading {
   font-style: normal;
